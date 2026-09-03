@@ -6,7 +6,7 @@ load_dotenv()
 
 
 def test_claude():
-    claude_api_key = os.getenv("CLAUDE_API_KEY")
+    claude_api_key = os.getenv("ANTHROPIC_API_KEY")
     model = ChatAnthropic(
         api_key=claude_api_key,  # type: ignore
         model_name="claude-haiku-4-5",
